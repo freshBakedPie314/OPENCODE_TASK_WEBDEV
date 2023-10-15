@@ -1,0 +1,226 @@
+/*<a href="https://www.freepik.com/free-photo/abstract-digital-grid-black-background_13312417.htm#query=website%20background&position=1&from_view=keyword&track=ais">Image by rawpixel.com</a> on Freepik
+<a href="https://iconscout.com/icons/linkedin" class="text-underline font-size-sm" target="_blank">linkedin</a> by <a href="https://iconscout.com/contributors/unicons" class="text-underline font-size-sm">Unicons Font</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
+*/
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(assets\Ubuntu-Light.ttf) format('truetype');
+}
+:root{
+    --teal : #08D9D6;
+    --black : #252A34;
+    --red : #ed0c44;
+    --gray : #EAEAEA;
+}
+
+body{
+    background-image: url("assets/background.jpg");
+    font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width:  100vw;
+}
+
+nav{
+    margin-left: 60%;
+    width: 40%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 100;
+}
+
+nav a{
+    color: var(--teal);
+    transition: all 0.5s ease;
+}
+
+nav a:hover{
+    color: var(--red);
+    text-decoration: underline;
+    font-size: 120%;
+}
+a{
+    text-decoration: none;
+}
+
+#heading{
+    color: var(--gray);
+}
+
+#home div{
+    padding-right: 50vh;
+    color: var(--teal);
+    font-weight: 500;
+    font-size: 4vh;
+}
+
+#about div{
+    padding: 3%;
+    text-align: right;
+    font-weight: 500;
+    font-size: 3vh;
+}
+
+#portfolio div{
+    padding: 3%;
+    height: 75%;
+    text-align: right;
+    font-weight: 500;
+    font-size: 3vh;
+}
+
+#name{
+    color: var(--red);
+    transition: all 0.5s ease;
+}
+
+#name:hover{
+    font-size: 110%;
+}
+
+#c_h{
+    color: var(--gray);
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    font-weight: 500;
+    font-size: 3vh;
+}
+.panels{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    height: 50vh;
+    width: 70vw;
+    background-color: var(--teal);
+    opacity: 85%;
+}
+
+#pfcontgames{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 1px;
+}
+
+#pfcontgames div{
+    width : 70%;
+    grid-auto-flow: row;
+    transition: all 1s ease;
+    
+}
+
+#pfcontgames div:hover{
+    width: 100%;
+}
+
+#pfcontgames div img{
+    width: 100%;
+    border-radius: 10px;
+}
+#port-text{
+    text-align: left;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+}
+#c{
+    margin-top: 25px;
+    display: flex;
+    width: 50%;
+    height: 50px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.contitems{
+    height: 100%;
+    position: relative;
+}
+
+.contitems img{
+    height: 100%;
+}
+
+.contact-img-coloured
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.imp{
+    font-size: 7vh;
+}
+.img-cont{
+    position: relative;
+}
+
+.portimg{
+    transition: all 0.3s;
+}
+.img-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.img-cont:hover .img-text {
+    opacity: 1;
+    width: 110%;
+  }
+
+.img-cont:hover .portimg{
+    filter: brightness(40%);
+    width: 110%;
+}
+
+.contact-img{
+    border-radius: 50%;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.contact-img:hover{
+    opacity: 0;
+    height: 0%;
+}
+
+.contact-img-coloured:hover {
+    opacity: 1;
+    height: 120%;
+}
+
+#game_dev a , #compprog a{
+    color: var(--teal);
+}
+
+.hr{
+    color: var(--black);
+    transition: all 0.5s ease;
+}
+
+.hr:hover{
+    font-size: 105%;
+    color: #1bd05a;
+}
